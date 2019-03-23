@@ -1,5 +1,5 @@
-from demo import create_app
+from demo.tests.fixtures import app  # noqa
 
 
-def test_app_creates():
-    assert create_app()
+def test_app_creates(app):  # noqa
+    assert app
