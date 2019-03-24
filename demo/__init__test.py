@@ -1,4 +1,4 @@
-from demo.tests.fixtures import app  # noqa
+from demo.test.fixtures import app  # noqa
 
 
 def test_app_creates(app):  # noqa
