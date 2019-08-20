@@ -6,7 +6,8 @@ def test_app_creates(app):  # noqa
 
 
 def test_app_healthy(app, client):  # noqa
-    with app.app_context():
+    #with app.app_context():
+    with client:
         resp = client.get('/health')
         assert resp.status_code == 200
         assert resp.is_json
