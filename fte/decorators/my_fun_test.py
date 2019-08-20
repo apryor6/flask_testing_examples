@@ -2,7 +2,6 @@ from unittest.mock import patch, MagicMock
 
 
 def test_my_fun_with_mocked_decorator():
-    mock: MagicMock = MagicMock()
     import fte.decorators
 
     def fake_decorator(magic_string):
